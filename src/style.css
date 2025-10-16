@@ -166,12 +166,12 @@ p {
   background-clip: text;
 }
 
-/* ===== CARDS PERSONALIZADAS ===== */
+/* ===== CARDS CON IMAGEN ===== */
 .card-custom {
   background-color: #1a1a1a;
   border: 1px solid #333;
   border-radius: 15px;
-  padding: 30px;
+  overflow: hidden;
   transition: all 0.3s;
   height: 100%;
 }
@@ -182,28 +182,31 @@ p {
   border-color: #667eea;
 }
 
-.card-icon {
-  width: 70px;
-  height: 70px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  margin-bottom: 20px;
+.card-custom .card-img-top {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s;
 }
 
-.card-title {
+.card-custom:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.card-custom .card-body {
+  padding: 25px;
+}
+
+.card-custom .card-title {
   font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
   margin-bottom: 15px;
 }
 
-.card-text {
+.card-custom .card-text {
   color: #b0b0b0;
   line-height: 1.6;
+  margin-bottom: 0;
 }
 
 /* ===== RESPONSIVE ===== */
