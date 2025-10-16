@@ -302,3 +302,66 @@ p {
 html {
   scroll-behavior: smooth;
 }
+/* ===== SECCIÓN NOSOTROS ===== */
+.nosotros-content {
+  padding-right: 20px;
+}
+
+.nosotros-subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 25px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nosotros-text {
+  font-size: 1.1rem;
+  color: #d0d0d0;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.nosotros-text strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.nosotros-image-container {
+  position: relative;
+}
+
+.nosotros-image {
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+  transition: transform 0.3s;
+}
+
+.nosotros-image:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 991px) {
+  .nosotros-content {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .nosotros-subtitle {
+    font-size: 1.75rem;
+  }
+
+  .nosotros-text {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .nosotros-subtitle {
+    font-size: 1.5rem;
+  }
+}
