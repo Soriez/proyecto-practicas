@@ -168,8 +168,8 @@ p {
 
 /* ===== CARDS CON IMAGEN ===== */
 .card-custom {
-  background-color: #1a1a1a;
-  border: 1px solid #333;
+  background-color: #160808;
+  border: 1px solid #00ff88;
   border-radius: 15px;
   overflow: hidden;
   transition: all 0.3s;
@@ -201,6 +201,10 @@ p {
   font-weight: 700;
   color: #fff;
   margin-bottom: 15px;
+  background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .card-custom .card-text {
